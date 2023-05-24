@@ -1,0 +1,62 @@
+.novidades {
+    background-color: var(--branco);
+    font-family: 'poppins';
+    padding: 1em;
+    color: var(--cor--de--titulo--secundario);
+}
+
+.novidades__titulo {
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.novidades__texto {
+    font-weight: 300;
+    margin: 1.2em 0;
+}
+
+.cadastro {
+    border-radius: 24px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid var(--cor--de--titulo--secundario);
+    color: var(--cor--de--titulo--secundario);
+    margin-bottom: 1em;
+}
+
+.cadastro::placeholder {
+    font-family: 'poppins';
+    color: var(--cor--de--titulo--secundario);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 2.5em;
+    background-position-y: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .novidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cadastro {
+        width: 30%;
+    }
+
+    .novidades__titulo {
+        font-size: 24px;
+    }
+
+    .novidades__titulo,
+    .novidades__texto {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1728px){
+    .novidades{
+        padding: 3em 20vw;
+    }
+    .novidades__titulo{
+        width: 100%;
+    }
+}
